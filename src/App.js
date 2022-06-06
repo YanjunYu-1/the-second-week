@@ -1,23 +1,21 @@
 import "./App.css";
-import BudgeSummary from "./components/BudgeSummary";
-import AddForm from "./components/AddForm";
-import IncomeList from "./components/IncomeList";
-import ExpensesList from "./components/ExpensesList";
+import BudgeHeader from "./components/BudgeHeader";
+import AddTransactionForm from "./components/AddTransactionForm";
+import TransactionList from "./components/TransactionList";
 
 function App() {
   return (
     <>
       <div className="top">
-        <BudgeSummary />
+        <BudgeHeader />
       </div>
 
       <div className="bottom">
-        <AddForm />
+        <AddTransactionForm />
 
         <div className="container">
-          <IncomeList />
-
-          <ExpensesList />
+          <TransactionList type="income"/>
+          <TransactionList type="expense"/>
         </div>
       </div>
     </>
