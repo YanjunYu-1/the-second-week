@@ -1,11 +1,22 @@
 import styles from './Transaction.module.css'
 
-const Transaction = ({type}) => {
+const Transaction = ({type,details}) => {
+    const{id,description,amount,date}=details;
+
+    const formattedDate = new Date(date).toLocaleDateString("en-CA", {
+        month: "short",
+        day: "numeric",
+        year: "numeric",
+      });
+
     return (
-        <div className={styles.item} data-transaction-id="4">
-            <div className={styles.description}>Car Payment </div>
+        <div className={styles.item} data-transaction-id={id}>
+            <div className={styles.description}>{description} </div>
             <div className="right">
-                <div className={styles.value}>- $299.99</div>
+                {/* <div className={styles.value}>- ${amount}</div> */}
+                <div className={styles.value}>
+                    {type==="income"?"+":"-"} ${amount.toFixed(2)}
+                </div>
                 {type==='expense'&& <div className={styles.percentage}>52%</div>}
                 
                 <div className={styles.delete}>
@@ -14,7 +25,7 @@ const Transaction = ({type}) => {
                     </button>
                 </div>
             </div>
-            <div className={styles.data}>Apr. 21st, 2020</div>
+            <div className={styles.date}>{formattedDate}</div>
         </div>
     );
 }

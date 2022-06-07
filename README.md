@@ -1,6 +1,8 @@
 1.在app.jsx中最外层如果是<body></body>会报错，可以改成<></>
 
 
+项目名单：react-budget 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
