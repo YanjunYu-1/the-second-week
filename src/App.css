@@ -31,21 +31,16 @@ body {
   color: #ff5049 !important;
 }
 
-
-
 /**********************************************
 *** BOTTOM PART
 **********************************************/
-
-
 
 /***** LISTS *****/
 .container {
   width: 1000px;
   margin: 60px auto;
+  display: flex;
 }
-
-
 
 h2 {
   text-transform: uppercase;
@@ -54,10 +49,7 @@ h2 {
   margin-bottom: 15px;
 }
 
-
-
-
-
+/* what are these for?这些是干什么用的 */
 .unpaid {
   background-color: #ffdad9 !important;
   cursor: pointer;
@@ -69,10 +61,4 @@ h2 {
 }
 .unpaid:hover .item__description {
   font-weight: 900;
-}
-
-.item__date {
-  width: 100%;
-  font-size: 13px;
-  color: #dadada;
 }

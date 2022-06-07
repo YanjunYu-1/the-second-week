@@ -12,8 +12,8 @@ function App() {
         <AddTransactionForm />
 
         <div className="container">
-          <TransactionList type="incomes"/>
-          <TransactionList type="expense"/>
+          <TransactionList type="income"/>
+          <TransactionList type="expenses"/>
         </div>
       </div>
     </>
