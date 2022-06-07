@@ -1,7 +1,9 @@
 1.在app.jsx中最外层如果是<body></body>会报错，可以改成<></>
 
-
 项目名单：react-budget 
+```java
+create initial components创建初始组件
+```
 
 # Getting Started with Create React App
 

@@ -1,10 +1,20 @@
-import './App.css';
+import "./App.css";
+import Header from "./components/Header";
+import Car from "./components/Car";
+import ItemList from "./components/ItemList";
+import CartSummary from "./components/CartSummary";
 
 function App() {
   return (
-    <div className="App">
-      <h1>this is a test app</h1>
-    </div>
+    <>
+      <Header>
+        <CartSummary />
+        <Car />
+      </Header>
+      <main>
+        <ItemList />
+      </main>
+    </>
   );
 }
 
