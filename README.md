@@ -3,6 +3,7 @@
 项目名单：react-budget 
 ```java
 create initial components创建初始组件
+create initial items state创建初始项目状态
 ```
 
 # Getting Started with Create React App
