@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html lang="en"><head>
+    <base target="_blank">
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>SD260 - React Practice Project</title>
+    <link rel="stylesheet" href="common/lt-styles.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/monokai-sublime.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>
+      hljs.registerLanguage('plaintext', function (e) {
+        return { disableAutodetect: !0 };
+      });
+      hljs.initHighlightingOnLoad();
+    </script>
+  </head>
+  <body>
+<section class="instructions">
+<h1>React Practice Project</h1>
+<h2>Part 1 - E-commerce Shopping Cart</h2>
+<p>Using React, develop a simple shopping cart app that meets the requirements outlined below.</p>
+<p>The following components should be included:</p>
+<ul>
+<li><code>App</code>: the application main component.</li>
+<li><code>Cart</code>: The top level cart component, contains the cart total and helps to print out each individual cart item.</li>
+<li><code>CartItem</code>: A component that represents each individual cart item.</li>
+<li><code>Item</code>: A component that represents each of the items for sale.</li>
+</ul>
+<p>Items to pre-populate your cart are available at this API endpoint:</p>
+<ul>
+<li>https://5ed0108416017c00165e327c.mockapi.io/api/v1/items</li>
+</ul>
+<h3>Requirements:</h3>
+<ul>
+<li>Users should be able to add items to the cart</li>
+<li>Users should be able to remove items from their cart
+<ul>
+<li>If there are multiple similar items in the cart, be sure your app removes <strong>only</strong> the one that was clicked on</li>
+</ul>
+</li>
+<li>The total number of items in the cart should be displayed</li>
+<li>The "total number of items" text should not be visible if there are no items in the cart</li>
+</ul>
+<p>HTML and CSS for this project are available for download <a href="/d2l/common/viewFile.d2lfile/Content/L2NvbnRlbnQvZW5mb3JjZWQvMTIxNjktU0QtMjYwLVcyMVNEL3NkMjYwLXNob3BwaW5nLWNhcnQtc3RhcnRlci56aXA/sd260-shopping-cart-starter.zip?ou=12169" target="_blank" rel="noopener">here</a></p>
+<h2>Part 2 - Cart App Refactor</h2>
+<p>Expand on the app build in Part 1 by adding React Router DOM to make the SPA (Single Page Application) function like a multi-page web site.</p>
+<h3>Requirements</h3>
+<ul>
+<li>Add 2 routes.
+<ul>
+<li>The first one that responds exactly to "/". This is your homepage that contains all the items and the header.</li>
+<li>The second route responds exactly to "/cart" and contains the cart and the header.</li>
+</ul>
+</li>
+<li>The app should display some high level cart information in the top right hand corner of the page, in the header, regardless of which page the user is routed it. It should include:
+<ul>
+<li>the total amount of items in your cart</li>
+<li>the current total of all the items in your cart.</li>
+</ul>
+</li>
+<li>Pay special attention to the plurality of the word item - 0 items, 1 item, 2 items.</li>
+<li>The cart page should display the message 'No Items in your Cart' if the cart is empty</li>
+<li>The cart icon should be clickable. Upon clicking it, it should navigate the user to the <code>/cart</code> page.</li>
+<li>The app should have a link that allows the user to navigate back to the home page from the cart page and keep shopping.</li>
+</ul>
+<p>Updated HTML and CSS files are available <a href="/d2l/common/viewFile.d2lfile/Content/637588633553393358/sd260-router-practice-starter-files.zip?ou=12169&amp;fid=L2NvbnRlbnQvZW5mb3JjZWQvMTIxNjktU0QtMjYwLVcyMVNEL3NkMjYwLXJvdXRlci1wcmFjdGljZS1zdGFydGVyLWZpbGVzLnppcA" target="_blank" rel="noopener">here</a><a href="&#39;https://drive.google.com/file/d/1suAAkieJ3que5kPxT-1R75JNDv5pAxTp/view&#39;"></a></p>
+</section>
+</body></html>
