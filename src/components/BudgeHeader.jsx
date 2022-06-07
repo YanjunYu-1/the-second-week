@@ -1,17 +1,22 @@
+import styles from "./BudgeHeader.module.css"
 import BudgeSummary from './BudgeSummary'
 
 const BudgeHeader = () => {
+    // console.log(styles);
     return (
-        <div className="budget">
-            <div className="budget__title">
-                Available Budget in{" "}
-                <span className="budget__title--month">April 2020</span>:
-            </div>
+        <div className={styles.top}>
+            <div className={styles.container}>
+                <div className={styles.title}>
+                    Available Budget in{" "}
+                    <span className={styles.mounth}>April 2020</span>:
+                </div>
 
-            <div className="budget__value">+ $225.10</div>
-            <BudgeSummary type="income" />
-            <BudgeSummary type="expenses" />          
+                <div className={styles.value}>+ $225.10</div>
+                <BudgeSummary type="income" />
+                <BudgeSummary type="expenses" />
+            </div>
         </div>
+
     );
 }
 
