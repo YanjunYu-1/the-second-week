@@ -5,7 +5,8 @@
 create initial components 创建初始组件
 create initial items state 创建初始项目状态
 create initial cart state 创建初始购物车状态
-add data to cart summary
+add data to cart summary 将数据添加到购物车摘要
+
 ```
 
 # Getting Started with Create React App

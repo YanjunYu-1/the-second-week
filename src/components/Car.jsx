@@ -1,7 +1,7 @@
 
 import CarItem from '../components/CarItem'
 const Car = ({carItems}) => {
-    console.log(carItems);
+    // console.log(carItems);
     return (
         <aside className="cart">
             <h2>Your Cart</h2>
