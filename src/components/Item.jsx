@@ -1,6 +1,6 @@
 const Item = ({item}) => {
     const{id,name,imageURL,description,price}=item;
-    console.log(id)
+    // console.log(id)
     return (
         <li className="item">
             <img src={imageURL}/>
